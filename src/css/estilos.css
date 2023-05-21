@@ -1,0 +1,139 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.modo-escuro{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;    
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon{
+    background-color: #ecd8df;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: #ffa2db;
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #ffa2db;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 1px;
+}
+
+main .cartao-pokemon .modo-escuro{
+    border: 1px solid #ffffff;
+}
+
+main .cartao-pokemon .informacoes span{
+    background-color: #ffa2db;
+    padding: 5px;
+    border-radius: 1px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;   
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipos{
+    padding: 8px;
+    border-radius: 100px;
+}
+
+.fogo{
+    background-color: rgb(255, 41, 3);
+    border-radius: 10px;
+}
+
+.voador{
+    background-color: rgb(255, 188, 3);
+    border-radius: 10px;
+}
+
+.inseto{
+    background-color: rgb(251, 255, 3);
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: rgb(3, 255, 3);
+    border-radius: 10px;
+}
+
+.agua{
+    background-color: rgb(3, 238, 255);
+    border-radius: 10px;
+}
+
+.veneno{
+    background-color: rgb(234, 3, 255);
+    border-radius: 10px;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
